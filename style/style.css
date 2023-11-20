@@ -1,0 +1,100 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff3e0; /* Light Orange Background */
+    padding: 20px;
+    color: #333;
+}
+
+#student-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2, h3 {
+    color: #d35400; /* Pizza Sauce Red */
+    text-align: center;
+}
+
+/* Pizza Order Form Styling */
+#pizza-order-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.order-step {
+    display: none; /* Initially hide all steps */
+    margin-bottom: 20px;
+}
+
+.active-step {
+    display: block; /* Show the active step */
+}
+
+/* Form Elements Styling */
+select, input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Toppings Table Styling */
+#toppings-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#toppings-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    background-color: #fdfdfd;
+}
+
+#toppings-table label {
+    cursor: pointer;
+}
+
+/* Buttons Styling */
+button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#prev-button, #next-button {
+    background-color: #3498db; /* Blue */
+    color: white;
+}
+
+#order-button {
+    background-color: #2ecc71; /* Green */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Output Display Styling */
+#pizza-output {
+    margin-top: 20px;
+    padding: 10px;
+    background: #ecf0f1;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}

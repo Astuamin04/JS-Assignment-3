@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Pizza Maker</title>
+    <link rel="stylesheet" href="./style/style.css"> 
+</head>
+<body>
+    <div id="student-info">
+        <p>Student ID: [Your Student ID]</p>
+        <p>Name: [Your Name]</p>
+    </div>
+
+    <div id="pizza-order-form">
+        <h2>Customize Your Pizza</h2>
+
+        <div class="order-step" id="step1">
+            <h3>Select Size</h3>
+            <select id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extra-large">Extra Large</option>
+                <option value="family">Family Size</option>
+            </select>
+        </div>
+
+        <div class="order-step" id="step2">
+            <h3>Select Crust</h3>
+            <select id="crust">
+                <option value="thin">Thin Crust</option>
+                <option value="thick">Thick Crust</option>
+                <option value="stuffed">Stuffed Crust</option>
+                <option value="gluten-free">Gluten-Free</option>
+                <option value="whole-wheat">Whole Wheat</option>
+                <option value="cheesy">Cheesy Crust</option>
+            </select>
+        </div>
+
+        <div class="order-step" id="step3">
+            <h3>Select Sauce</h3>
+            <select id="sauce">
+                <option value="tomato">Tomato</option>
+                <option value="bbq">BBQ</option>
+                <option value="alfredo">Alfredo</option>
+                <option value="garlic-pesto">Garlic Pesto</option>
+                <option value="marinara">Marinara</option>
+                <option value="spicy-tomato">Spicy Tomato</option>
+            </select>
+        </div>
+
+        <div class="order-step" id="step4">
+            <h3>Select Cheese</h3>
+            <select id="cheese">
+                <option value="mozzarella">Mozzarella</option>
+                <option value="cheddar">Cheddar</option>
+                <option value="vegan">Vegan</option>
+                <option value="no-cheese">No Cheese</option>
+                <option value="parmesan">Parmesan</option>
+                <option value="gouda">Gouda</option>
+            </select>
+        </div>
+
+        <div class="order-step" id="step5">
+            <h3>Choose Toppings</h3>
+            <table id="toppings-table">
+                <tr>
+                    <td><input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni"><label for="pepperoni">Pepperoni</label></td>
+                    <td><input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms"><label for="mushrooms">Mushrooms</label></td>
+                    <td><input type="checkbox" id="olives" name="toppings" value="Olives"><label for="olives">Olives</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" id="onions" name="toppings" value="Onions"><label for="onions">Onions</label></td>
+                    <td><input type="checkbox" id="bell-peppers" name="toppings" value="Bell Peppers"><label for="bell-peppers">Bell Peppers</label></td>
+                    <td><input type="checkbox" id="bacon" name="toppings" value="Bacon"><label for="bacon">Bacon</label></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" id="sausage" name="toppings" value="Sausage"><label for="sausage">Sausage</label></td>
+                    <td><input type="checkbox" id="pineapple" name="toppings" value="Pineapple"><label for="pineapple">Pineapple</label></td>
+                    <td><input type="checkbox" id="spinach" name="toppings" value="Spinach"><label for="spinach">Spinach</label></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <button type="button" id="prev-button" onclick="prevStep()">Previous</button>
+        <button type="button" id="next-button" onclick="nextStep()">Next</button>
+        <button type="button" id="order-button" onclick="placeOrder()" style="display: none;">Order</button>
+    </div>
+
+    <div id="pizza-output"></div>
+
+    <script src="./JS/js.js"></script> 
+    
+</body>
+</html>
